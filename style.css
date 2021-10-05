@@ -1,0 +1,144 @@
+/*font setup*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/*/////////////////////reset the property///////////////*/
+* {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #43cea2 ;
+    height: 100vh;
+}
+
+.calcul{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+    background-image: linear-gradient(180deg,#141e30, #243b55);
+    height: 85vh;
+    width: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.in {
+    padding: 6px 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin: 25px 15px 15px 15px;
+    height: 40px;
+    color: black;
+    border-radius: 6px;
+    background: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.keypad{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    gap: 18px;
+    justify-content: center;
+}
+
+.keys{
+    width: 80px;
+    height: 80px;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.keys:hover {
+    background-color: rgba(255, 255, 255, 0.400);
+    color: white;
+}
+
+.res {
+    padding: 5px;
+    height: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#clear {
+    background-color: red;
+    color: white;
+}
+
+
+/*//////responsive code for calcul//////////////*/
+/*///////////display 320px to 400px///////*/
+@media  screen and (min-width: 320px) and (max-width: 400px) {
+    .calcul {
+        width: 300px;
+        height: 400px;
+    }
+
+    .keys {
+        width: 50px;
+        height: 50px;
+    }
+
+    .keypad{
+        margin-top: 10px;
+        grid-template-columns: repeat(4,50px);
+        gap: 10px;
+    }
+    
+}
+
+/*///////////display 400px to 500px///////*/
+@media  screen and (min-width: 400px) and (max-width: 500px) {
+    .calcul {
+        width: 380px;
+        height: 450px;
+    }
+
+    .keys {
+        width: 60px;
+        height: 60px;
+    }
+
+    .keypad{
+        margin-top: 10px;
+        grid-template-columns: repeat(4,60px);
+        gap: 12px;
+    }
+    
+}
+
+/*///////////display 500px to 800px///////*/
+@media  screen and (min-width: 500px) and (max-width: 800px) {
+    .calcul {
+        width: 450px;
+        height: 500px;
+    }
+
+    .keys {
+        width: 70px;
+        height: 70px;
+    }
+
+    .keypad{
+        margin-top: 10px;
+        grid-template-columns: repeat(4,70px);
+        gap: 15px;
+    }
+    
+}
