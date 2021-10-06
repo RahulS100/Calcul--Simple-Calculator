@@ -34,7 +34,7 @@
     font-size: 20px;
     outline: none;
     border: none;
-    margin: 26px 15px 15px 15px;
+    margin: 25px 5px 15px 15px;
     height: 40px;
     color: black;
     border-radius: 6px;
@@ -81,6 +81,10 @@
     color: white;
 }
 
+#cut_btn {
+    height: 40px;
+}
+
 
 /*//////responsive code for calcul//////////////*/
 /*///////////display 320px to 400px///////*/
@@ -100,6 +104,10 @@
         grid-template-columns: repeat(4,50px);
         gap: 10px;
     }
+
+    .in {
+        width: 190px;
+      }
     
 }
 
@@ -120,6 +128,10 @@
         grid-template-columns: repeat(4,60px);
         gap: 12px;
     }
+
+    .in {
+        width: 260px;
+      }    
     
 }
 
